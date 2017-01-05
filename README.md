@@ -22,7 +22,7 @@ This gem ships with three viewer styles:
   alt="full style"/>
 </p>
 
-**reduced**
+**minimal**
 
 <p align="center">
   <img
@@ -69,6 +69,15 @@ an iframe.
 ```
 
 NOTE: The helper will render a full HTML document and should not be used in a layout.
+
+### CORS of the viewer
+
+As the viewer does a cross origin check, you'll have specify the origins you
+want to allow to use your pdf.js viewer using an ENV variable:
+
+```
+$ export PDFJS_VIEWER_ORIGINS=http://localhost:3000,http://example.com,http://production-site.com
+```
 
 ## Development
 
